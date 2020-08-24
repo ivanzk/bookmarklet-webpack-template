@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es2020": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "consistent-return": "off",
+    "constructor-super": "warn",
+    "import/prefer-default-export": "off",
+    "linebreak-style": "off",
+    "no-const-assign": "warn",
+    "no-param-reassign": "off",
+    "no-shadow": "off",
+    "no-this-before-super": "warn",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "warn",
+    "no-use-before-define": "off",
+    "operator-linebreak": "off",
+    "valid-typeof": "warn"
+  }
+}
