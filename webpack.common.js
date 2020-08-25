@@ -1,3 +1,4 @@
+const path = require('path');
 const webpack = require('webpack');
 const BookmarkletWrapperPlugin = require('bookmarklet-wrapper-webpack-plugin');
 
@@ -30,6 +31,9 @@ module.exports = {
         },
       },
     ],
+  },
+  resolve: {
+    roots: [path.resolve(__dirname, 'src')],
   },
   plugins: [
     new webpack.DefinePlugin({
