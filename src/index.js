@@ -1,6 +1,10 @@
 import styles from './styles.scss';
 
-// eslint-disable-next-line no-undef
-console.log(`${NAME} v${VERSION} is running!`);
-
+// Load styles
 styles.use();
+
+// eslint-disable-next-line no-undef
+const message = `${NAME} v${VERSION} is running!`;
+
+document.title = message;
+console.log(message);
